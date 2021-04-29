@@ -60,10 +60,10 @@ export type GuessableDelimiters = ',' | '\t' | '|' | ';' | RECORD_SEP_TYPE | UNI
  * Configurable Properties
  */
 // The size in bytes of each file chunk. Used when streaming files obtained from the DOM that exist on the local computer. Default 10 MB.
-export let LocalChunkSize: string;
+export let LocalChunkSize: number;
 
 // Same as LocalChunkSize, but for downloading files from remote locations. Default 5 MB.
-export let RemoteChunkSize: string;
+export let RemoteChunkSize: number;
 
 // The delimiter used when it is left unspecified and cannot be detected automatically. Default is comma.
 export let DefaultDelimiter: string;
